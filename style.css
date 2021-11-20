@@ -73,7 +73,11 @@ h1 {
 
 .search-bar input:focus::placeholder {
     color: transparent;
-  }
+}
+
+.search-bar label {
+    display: none;
+}
 
 /* pokemon styles */
 .pokemon {
@@ -97,7 +101,7 @@ h1 {
     margin: 20px;
 }
 
-/* footer styles */
+/* ---------- footer styles ---------- */
 footer {
     grid-area: footer;
     display: flex;
