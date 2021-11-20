@@ -19,7 +19,8 @@
 
     <nav>
         <div class="search-bar">
-            <input class="search" type="text" label="Search a Pokemon" placeholder="Search a Pokémon..." onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
+            <input class="search" id="search" type="text" placeholder="Search a Pokémon..." onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
+            <label for="search">Search a Pokemon</label>
         </div>
     </nav>
 
@@ -37,7 +38,7 @@
         <a href="https://twitter.com/tomshawdev" target="_blank">
             <span>Twitter</span>
             <i class="fab fa-twitter"></i>
-        </a>
+        </a>   
     </footer>
 
 <script src="main.js"></script>
