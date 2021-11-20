@@ -58,7 +58,7 @@ h1 {
 }
 
 .search-bar input {
-    padding: 5px 0 5px 0;
+    padding: 5px 0 5px 10px;
     font-size: 0.8em;
     font-family: 'Press Start 2P', sans-serif;
     transition: 0.1s ease;
