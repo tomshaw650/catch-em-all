@@ -56,6 +56,21 @@ h1 {
     grid-area: search;
 }
 
+.search-bar input {
+    padding: 5px 0 5px 0;
+    font-size: 0.8em;
+    font-family: 'Press Start 2P', cursive;
+    transition: 0.1s ease;
+}
+
+.search-bar input:focus {
+    border: 3px solid #555;
+}
+
+.search-bar input:focus::placeholder {
+    color: transparent;
+  }
+
 /* pokemon styles */
 .pokemon {
     grid-area: poke;
@@ -81,7 +96,26 @@ h1 {
 /* footer styles */
 footer {
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
     font-size: 0.5em;
+}
+
+footer a i {
+    font-size: 1.4em;
+    padding: 0 7px 0 7px;
+}
+
+footer a:nth-child(2) i:hover {
+    color: purple;
+}
+
+footer a:last-child i:hover {
+    color: turquoise;
 }
 
 footer a {
