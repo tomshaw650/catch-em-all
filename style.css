@@ -48,6 +48,7 @@ body {
 h1 {
     grid-area: title;
 
+    text-align: center;
     font-size: 2em;
 }
 
