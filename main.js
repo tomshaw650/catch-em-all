@@ -28,6 +28,7 @@ searchBar.addEventListener("keyup", function(event) {
         var apiURL = `${url}${type}/${name}`
 
         // fetch to return a promise with the data in it
+        // https://developer.mozilla.org/en-US/docs/Web/API/fetch
         fetch(apiURL)
         .then( (data) => data.json() )
         .then( (pokemon) => generateHTML(pokemon) )
@@ -44,7 +45,6 @@ searchBar.addEventListener("keyup", function(event) {
               }));
         
         function generateHTML(data) {
-
             const HTML = `
             <div class="poke-name">${data.name}</div>
             <img class="poke-image" src=${data.sprites.front_default}>
