@@ -1,0 +1,89 @@
+/* ---------- FONT ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ---------- CSS RESET ---------- */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- MAIN STYLES ---------- */
+body {
+    height: 100vh;
+    width: 100vw;
+
+    font-family: 'Press Start 2P', cursive;
+
+    display: grid;
+    grid-template-areas: 
+                        "title"
+                        "search"
+                        "poke"
+                        "poke"
+                        "footer";
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* header styles */
+h1 {
+    grid-area: title;
+
+    font-size: 2em;
+}
+
+/* search bar styles */
+.search-bar {
+    grid-area: search;
+}
+
+/* pokemon styles */
+.pokemon {
+    grid-area: poke;
+}
+
+.poke-name {
+    display: grid;
+    justify-content: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.poke-image {
+    display: grid;
+    margin: 0 auto;
+}
+
+.poke-details li {
+    font-size: 0.9em;
+    margin: 20px;
+}
+
+/* footer styles */
+footer {
+    grid-area: footer;
+    font-size: 0.5em;
+}
+
+footer a {
+    color: black;
+}
