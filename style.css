@@ -29,6 +29,7 @@ html {
 body {
     height: 100vh;
     width: 100vw;
+    background-color: hsl(44, 26%, 86%);
 
     font-family: 'Press Start 2P', sans-serif;
 
@@ -61,11 +62,13 @@ h1 {
     padding: 5px 0 5px 10px;
     font-size: 0.8em;
     font-family: 'Press Start 2P', sans-serif;
-    transition: 0.1s ease;
+    transition: 0.15s ease;
 }
 
 .search-bar input:focus {
-    border: 3px solid #555;
+    outline: none;
+    border: 4px solid #555;
+    border-radius: 3px;
 }
 
 .search-bar input:focus::placeholder {
@@ -103,7 +106,11 @@ footer {
 }
 
 footer p {
-    font-size: 0.5em;
+    font-size: 0.7em;
+}
+
+footer a span {
+    display: none;
 }
 
 footer a i {
